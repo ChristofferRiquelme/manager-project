@@ -1,11 +1,67 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "CManager.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "CManager.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CManager.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CManager.Application.dll": {}
+        }
+      },
+      "CManager.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/CManager.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CManager.Domain.dll": {}
+        }
+      },
+      "CManager.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "CManager.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CManager.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CManager.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CManager.Application/1.0.0": {
+      "type": "project",
+      "path": "../CManager.Application/CManager.Application.csproj",
+      "msbuildProject": "../CManager.Application/CManager.Application.csproj"
+    },
+    "CManager.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CManager.Domain/CManager.Domain.csproj",
+      "msbuildProject": "../CManager.Domain/CManager.Domain.csproj"
+    },
+    "CManager.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../CManager.Infrastructure/CManager.Infrastructure.csproj",
+      "msbuildProject": "../CManager.Infrastructure/CManager.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "CManager.Application >= 1.0.0",
+      "CManager.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/christoffer/.nuget/packages/": {}
@@ -31,7 +87,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/CManager.Application.csproj": {
+              "projectPath": "/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/CManager.Application.csproj"
+            },
+            "/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Infrastructure/CManager.Infrastructure.csproj": {
+              "projectPath": "/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Infrastructure/CManager.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

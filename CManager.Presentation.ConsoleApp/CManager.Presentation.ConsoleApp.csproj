@@ -7,4 +7,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CManager.Application\CManager.Application.csproj" />
+    <ProjectReference Include="..\CManager.Infrastructure\CManager.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
