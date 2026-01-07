@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CManager.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e11c19973465ff2e20e19d71a7a10d8f5ba4f3de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb47355ae0b6245bc57a9ab9664d0569b9742fb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CManager.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CManager.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
