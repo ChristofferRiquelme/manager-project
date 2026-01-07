@@ -125,6 +125,26 @@ public class MenuController
     }
     private void DeleteCustomer()
     {
-        
+        Console.Clear();
+        Console.WriteLine("Ta bort kund\n");
+
+        Console.Write("Ange email: ");
+        var email = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(email))
+        {
+            Console.WriteLine("Email får inte vara tom.");
+            return;
+        }
+
+        var success = _customerService.DeleteByEmail(email);
+
+        if (!success)
+        {
+            Console.WriteLine("Ingen kund hittade med den angivna email adressen.");
+            return;
+        }
+
+        Console.WriteLine("Kunden har tagits bort.");
     }
 }
