@@ -17,6 +17,9 @@ public class CustomerService : ICustomerService
 
     public void Create(Customer customer)
     {
+        if (_customers.Any(x => x.Email == customer.Email))
+            throw new InvalidOperationException("En kund med denna e-post finns redan.");
+            
         customer.Id = Guid.NewGuid();
         _customers.Add(customer);
         _repository.Save(_customers);
