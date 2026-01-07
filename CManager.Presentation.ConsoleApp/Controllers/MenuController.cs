@@ -67,17 +67,61 @@ public class MenuController
             Email= email
         };
 
-        _customerService.Create(customer);
-
-        Console.WriteLine("Kunden skapades!");
+        try
+        {
+            _customerService.Create(customer);
+            Console.WriteLine("Kunden skapades!");
+        }
+        catch (InvalidOperationException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
     }
     private void ShowCustomers()
     {
-        
+        Console.Clear();
+        Console.WriteLine("Alla kunder\n");
+
+        var customers = _customerService.GetAll();
+
+        if (!customers.Any())
+        {
+            Console.WriteLine("Inga kunder finns ännu.");
+            return;
+        }
+
+        foreach (var customer in customers)
+        {
+            Console.WriteLine($"Namn: {customer.FirstName + customer.LastName}");
+            Console.WriteLine($"Email: {customer.Email}");
+            Console.WriteLine("----------------------");
+        }
     }
     private void ShowCustomer()
     {
-        
+        Console.Clear();
+        Console.WriteLine("Visa kund\n");
+
+        Console.Write("Ange email: ");
+        var email = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(email))
+        {
+            Console.WriteLine("Email får inte vara tom.");
+            return;
+        }
+
+        var customer = _customerService.GetByEmail(email);
+
+        if (customer == null)
+        {
+            Console.WriteLine("Ingen kund hittades med den angivna email adressen.");
+            return;
+        }
+
+        Console.WriteLine("\nKundinformation:");
+        Console.WriteLine($"Namn: {customer.FirstName + customer.LastName}");
+        Console.WriteLine($"Email: {customer.Email}");
     }
     private void DeleteCustomer()
     {
