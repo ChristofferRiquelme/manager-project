@@ -120,7 +120,7 @@ public class MenuController
         }
 
         Console.WriteLine("\nKundinformation:");
-        Console.WriteLine($"Namn: {customer.FirstName + customer.LastName}");
+        Console.WriteLine($"Namn: {customer.FirstName} {customer.LastName}");
         Console.WriteLine($"Email: {customer.Email}");
     }
     private void DeleteCustomer()
