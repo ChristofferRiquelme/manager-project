@@ -1,0 +1,16 @@
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/bin/Debug/net10.0/CManager.Application.deps.json
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/bin/Debug/net10.0/CManager.Application.dll
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/bin/Debug/net10.0/CManager.Application.pdb
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/bin/Debug/net10.0/CManager.Domain.dll
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/bin/Debug/net10.0/CManager.Domain.pdb
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/CManager.Application.csproj.AssemblyReference.cache
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/CManager.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/CManager.Application.AssemblyInfoInputs.cache
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/CManager.Application.AssemblyInfo.cs
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/CManager.Application.csproj.CoreCompileInputs.cache
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/CManager.Application.sourcelink.json
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/CManager.645D9600.Up2Date
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/CManager.Application.dll
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/refint/CManager.Application.dll
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/CManager.Application.pdb
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Application/obj/Debug/net10.0/ref/CManager.Application.dll

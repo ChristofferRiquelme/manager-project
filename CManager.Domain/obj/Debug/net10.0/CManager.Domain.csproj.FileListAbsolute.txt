@@ -1,0 +1,12 @@
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/bin/Debug/net10.0/CManager.Domain.deps.json
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/bin/Debug/net10.0/CManager.Domain.dll
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/bin/Debug/net10.0/CManager.Domain.pdb
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/obj/Debug/net10.0/CManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/obj/Debug/net10.0/CManager.Domain.AssemblyInfoInputs.cache
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/obj/Debug/net10.0/CManager.Domain.AssemblyInfo.cs
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/obj/Debug/net10.0/CManager.Domain.csproj.CoreCompileInputs.cache
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/obj/Debug/net10.0/CManager.Domain.sourcelink.json
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/obj/Debug/net10.0/CManager.Domain.dll
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/obj/Debug/net10.0/refint/CManager.Domain.dll
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/obj/Debug/net10.0/CManager.Domain.pdb
+/Users/christoffer/Sites/ecutbildning/manager_project/CManager.Domain/obj/Debug/net10.0/ref/CManager.Domain.dll
