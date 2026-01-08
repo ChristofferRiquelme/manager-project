@@ -92,7 +92,7 @@ public class MenuController
 
         foreach (var customer in customers)
         {
-            Console.WriteLine($"Namn: {customer.FirstName + customer.LastName}");
+            Console.WriteLine($"Namn: {customer.FirstName} {customer.LastName}");
             Console.WriteLine($"Email: {customer.Email}");
             Console.WriteLine("----------------------");
         }
