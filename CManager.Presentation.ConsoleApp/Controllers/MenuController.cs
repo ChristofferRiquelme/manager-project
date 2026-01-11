@@ -54,7 +54,10 @@ public class MenuController
         Console.Write("Email: ");
         var email = Console.ReadLine();
 
-        if (string.IsNullOrWhiteSpace(fname) || string.IsNullOrWhiteSpace(lname) || string.IsNullOrWhiteSpace(email))
+        Console.Write("Telefonnummer: ");
+        var phoneNumber = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(fname) || string.IsNullOrWhiteSpace(lname) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(phoneNumber))
         {
             Console.WriteLine("Namn och email får inte vara tomma.");
             return;
@@ -64,7 +67,8 @@ public class MenuController
         {
             FirstName = fname,
             LastName = lname,
-            Email= email
+            Email = email,
+            PhoneNumber = phoneNumber 
         };
 
         try
@@ -94,6 +98,7 @@ public class MenuController
         {
             Console.WriteLine($"Namn: {customer.FirstName} {customer.LastName}");
             Console.WriteLine($"Email: {customer.Email}");
+            Console.WriteLine($"Telefonnummer: {customer.PhoneNumber}");
             Console.WriteLine("----------------------");
         }
     }
@@ -122,6 +127,7 @@ public class MenuController
         Console.WriteLine("\nKundinformation:");
         Console.WriteLine($"Namn: {customer.FirstName} {customer.LastName}");
         Console.WriteLine($"Email: {customer.Email}");
+        Console.WriteLine($"Telefonnummer: {customer.PhoneNumber}");
     }
     private void DeleteCustomer()
     {
