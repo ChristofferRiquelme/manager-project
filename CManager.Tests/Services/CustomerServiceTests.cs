@@ -34,3 +34,10 @@ public class CustomerServiceTests
         mockRepo.Verify(x => x.Save(It.IsAny<List<Customer>>()), Times.Once);
     }
 }
+
+
+/* Detta är AI generad kod. Jag känner fortfarande att jag inte riktigt greppar konceptet med enhetstester. Men detta är ett enhetstest för CustomerService där:
+    - Repository mockas med Moq
+    - ingen faktiskt fil används
+   Detta säkerställer att affärslogiken fungerar oberoende av lagring.
+*/
