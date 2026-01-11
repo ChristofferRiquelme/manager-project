@@ -57,9 +57,20 @@ public class MenuController
         Console.Write("Telefonnummer: ");
         var phoneNumber = Console.ReadLine();
 
-        if (string.IsNullOrWhiteSpace(fname) || string.IsNullOrWhiteSpace(lname) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(phoneNumber))
+        Console.WriteLine("\nAdressuppgifter");
+
+        Console.Write("Gatuadress: ");
+        var street = Console.ReadLine();
+
+        Console.Write("Postkod: ");
+        var postalCode = Console.ReadLine();
+
+        Console.Write("Ort: ");
+        var city = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(fname) || string.IsNullOrWhiteSpace(lname) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(phoneNumber) || string.IsNullOrWhiteSpace(street) || string.IsNullOrWhiteSpace(postalCode) || string.IsNullOrWhiteSpace(city))
         {
-            Console.WriteLine("Namn och email får inte vara tomma.");
+            Console.WriteLine("Alla fält måste vara ifyllda.");
             return;
         }
 
@@ -68,7 +79,13 @@ public class MenuController
             FirstName = fname,
             LastName = lname,
             Email = email,
-            PhoneNumber = phoneNumber 
+            PhoneNumber = phoneNumber,
+            Address = new Address
+            {
+                Street = street,
+                PostalCode = postalCode,
+                City = city
+            } 
         };
 
         try
@@ -99,6 +116,8 @@ public class MenuController
             Console.WriteLine($"Namn: {customer.FirstName} {customer.LastName}");
             Console.WriteLine($"Email: {customer.Email}");
             Console.WriteLine($"Telefonnummer: {customer.PhoneNumber}");
+            Console.WriteLine("\nAdressuppgifter ");
+            Console.WriteLine($"Adress: {customer.Address.Street} {customer.Address.PostalCode} {customer.Address.City}");
             Console.WriteLine("----------------------");
         }
     }
@@ -128,6 +147,7 @@ public class MenuController
         Console.WriteLine($"Namn: {customer.FirstName} {customer.LastName}");
         Console.WriteLine($"Email: {customer.Email}");
         Console.WriteLine($"Telefonnummer: {customer.PhoneNumber}");
+        Console.WriteLine($"Adress: {customer.Address.Street} {customer.Address.PostalCode} {customer.Address.City}");
     }
     private void DeleteCustomer()
     {

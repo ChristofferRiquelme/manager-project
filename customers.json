@@ -1,10 +1,26 @@
 [
   {
-    "Id": "d9415854-6a55-4f88-94c9-65d2b435d6ae",
-    "FirstName": "Pablo",
-    "LastName": "Escobar",
-    "Email": "plataoplomo@test.se",
-    "PhoneNumber": null,
-    "Address": null
+    "Id": "edcf610b-9bfa-4c63-8d74-618199adc0b2",
+    "FirstName": "Angelo",
+    "LastName": "Riquelme",
+    "Email": "wussgood@test.se",
+    "PhoneNumber": "123456",
+    "Address": {
+      "Street": "Flintv\u00E4gen 4B",
+      "PostalCode": "35237",
+      "City": "V\u00E4xj\u00F6"
+    }
+  },
+  {
+    "Id": "79dd8b29-5f0e-4c60-bad5-3d9f3232c263",
+    "FirstName": "Christoffer",
+    "LastName": "Riquelme",
+    "Email": "test@test.se",
+    "PhoneNumber": "123456",
+    "Address": {
+      "Street": "L\u00F6vsalsgatan 6",
+      "PostalCode": "35259",
+      "City": "V\u00E4xj\u00F6"
+    }
   }
 ]
